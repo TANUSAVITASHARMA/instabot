@@ -1,15 +1,18 @@
 import requests
-from constants import APP_ACCESS_TOKEN,BASE_URL
+from constants import APP_ACCESS_TOKEN, BASE_URL
+
 def get_user_id(insta_username):
+    insta_username='jyotithakur15111'
     #function logic
-     requset_url=(BASE_URL+'user/search?q=&s')%(insta_username,APP_ACCESS_TOKEN)
-     print'GET REQUEST url:&'%(requset_url)
-     user_info=requests.get(requset_url).json()
-     if user_info['meta']['code']==200:
-         if len(user_info)['data']:
+    request_url = (BASE_URL + 'users/search?q=%s&access_token=%s') % (insta_username, APP_ACCESS_TOKEN)
+    print 'GET request url : %s' % (request_url)
+    user_info = requests.get(request_url).json()
+
+    if user_info['meta']['code'] == 200:
+        if len(user_info['data']):
             return user_info['data'][0]['id']
-         else:
-              return None
-     else:
-         print'status code other then 200 recieved'
-         exit()
+        else:
+            return None
+    else:
+        print 'Status code other than 200 received!'
+        exit()

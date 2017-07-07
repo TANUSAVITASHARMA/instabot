@@ -1,5 +1,4 @@
 #all global variables is here
 #instagramapi access tokens
-
-APP_ACCESS_TOKEN = '4870715640.a48e759.874aba351e5147eca8a9d36b9688f494'
+APP_ACCESS_TOKEN = '5684396832.5c38a37.96ddf1cebba74e5f94dd6135fad5392c'
 BASE_URL = 'https://api.instagram.com/v1/'
