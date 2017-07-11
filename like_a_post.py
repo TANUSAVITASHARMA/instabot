@@ -11,4 +11,3 @@ def like_a_post(insta_username):
         print 'Like was successful!'
     else:
         print 'Your like was unsuccessful. Try again!'
-like_a_post(insta_username='jyotithkaur15111')

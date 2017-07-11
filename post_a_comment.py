@@ -12,4 +12,3 @@ def post_a_comment(insta_username):
       print "Post comment Successfully"
     else:
      print "Unable to add comment. try again!"
-post_a_comment(insta_username="jyotithakur15111")

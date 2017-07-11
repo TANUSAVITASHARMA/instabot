@@ -19,4 +19,3 @@ def get_post_id(insta_username):
     else:
         print 'Status code other than 200 received!'
         exit()
-get_post_id(insta_username="jyotithakur15111")
